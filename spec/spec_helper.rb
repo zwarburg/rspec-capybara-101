@@ -1,12 +1,10 @@
 # frozen-string-literal: true
-require 'codeclimate-test-reporter'
-CodeClimate::TestReporter.start
 
 require 'rspec'
 require 'capybara/rspec'
 require 'capybara/dsl'
 require 'selenium-webdriver'
-require 'byebug'
+
 
 # loading page object files
 page_paths  = File.join(Dir.pwd, 'spec', 'pages', '**', '*.rb')
